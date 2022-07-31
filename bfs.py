@@ -80,6 +80,7 @@ destination = "https://en.wikipedia.org/wiki/Game_complexity"
 
 if destination[-1] == "/":
 	destination = destination[:-1]
+destination = get_main_link(destination)
 
 
 print("shortest path: ", find_path(source, destination))
