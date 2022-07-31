@@ -80,9 +80,7 @@ destination = "https://en.wikipedia.org/wiki/Game_complexity"
 
 if destination[-1] == "/":
 	destination = destination[:-1]
-l = get_next_nodes(source)
-if destination in l:
-	print("yes")
+
 
 print("shortest path: ", find_path(source, destination))
 
